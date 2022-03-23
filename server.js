@@ -34,12 +34,12 @@ app.get('/app/flips/:number', (req, res) => {
 
 app.get('/app.flip/call/heads', (req, res) => {
   res.status(200)
-  res.json(flipACoin("heads"))
+  res.json(flipACoin('heads'));
 })
 
 app.get('/app/flip/call/tails', (req, res) => {
   res.status(200)
-  res.json(flipACoin("tails"))
+  res.json(flipACoin("tails"));
 })
 
 app.use(function(req, res) {
